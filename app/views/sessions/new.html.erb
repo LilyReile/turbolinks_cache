@@ -1,0 +1,10 @@
+sessions new
+<%= button_to 'log in', sessions_path %>
+<%= content_for :head_javascript do %>
+  <script>
+    document.addEventListener("turbolinks:load", () => {
+      Turbolinks.clearCache();
+      console.log('turbolinks clear cache fired');
+    })
+  </script>
+<% end %>

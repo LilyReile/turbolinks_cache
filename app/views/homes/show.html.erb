@@ -1,0 +1,2 @@
+<h1>You're logged in as <%= session[:user] || "no one" %></h1>
+<%= button_to 'log out', '/logout', method: :delete %>
